@@ -1,0 +1,9 @@
+C_OBJ += $(MBED_LIB_DIR)/Motor/pwmout_rst_sync_api.o
+CXX_OBJ += $(MBED_LIB_DIR)/Motor/Motor.o \
+		   $(MBED_LIB_DIR)/Motor/Motor.o
+
+INCLUDE_PATHS += -I$(MBED_LIB_DIR)/Motor \
+ 		 -I$(SRCDIR)/include \
+		 -I$(SRCDIR)/target/gr_peach_gcc \
+ 		 -I$(SRCDIR)/arch \
+ 		 -I$(SRCDIR)/arch/arm_gcc/common \
